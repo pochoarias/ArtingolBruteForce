@@ -14,6 +14,7 @@ namespace ArtingolBruteForce
         {
             string baseUrl = string.Empty;
             string crackedUrl = string.Empty;
+            const string url = "https://www.<inserttestingsite>.com";
 
             //Instance of Data Generator
             var dataGenerator = new DataGenerator();
@@ -26,7 +27,7 @@ namespace ArtingolBruteForce
 
             foreach (var users in dataGenerator.UserList)
             {
-                driver.Navigate().GoToUrl("https://ticoservices.net/artingol/index.php");
+                driver.Navigate().GoToUrl(url);
                 baseUrl = driver.Url;
                 foreach (var password in dataGenerator.PasswordList)
                 {
@@ -84,55 +85,10 @@ namespace ArtingolBruteForce
         /// List of all participants
         /// </summary>
         private readonly string[] names = new string[] {
-            "Jose Quiros",
-            "Gerardo Rivera",
-            "Diego Gamboa",
-            "Franco Cersosimo",
-            "Jonathan Ulate",
-            "Daniel Bertarioni",
-            "Mauricio Amador",
-            "Olman Garcia",
-            "Will Vasquez",
-            "Luis Diego Ulate",
-            "Josue Rivera",
-            "Jacob Quiros",
-            "Jafet Welsh",
-            "Luis Esteban Cascante",
-            "Gonzalo Siles",
-            "Sebastián Ureña",
-            "Stefano Fazio",
-            "Jose Chaves",
-            "Braulio Sandi",
-            "Hilda Pineda",
-            "Braulio Rivera",
-            "Adriano Fazio",
-            "JJ Mena",
-            "Alejandro Navarro",
-            "Esteban Aleman",
-            "Mike Salazar",
-            "Arturo Cordero",
-            "Jeffrie Fonseca",
-            "Daniel Aguilar",
-            "Carlos García",
-            "Alessandro Fazio",
-            "Silvia Quesada",
-            "Yoel Zumbado",
-            "Olman Quesada",
-            "Diego Varela",
-            "William Quesada",
-            "Gabriel Quesada",
-            "Gregory Gigi Obando",
-            "Kennito Sanchez",
-            "Darío Rivera",
-            "Luis Felipe Mora",
-            "Edgar Aleman",
-            "Gloriana Garro",
-            "Cesar Hidalgo",
-            "Caleb Villalta",
-            "Edgar Monestel",
-            "Danny Paniagua",
-            "Luis Diego Fonseca",
-            "Hugo Boss Fernández"
+            "firstName0 lastName0",
+            "firstName1 lastName1",
+            "firstName2 lastName2",
+            "firstName3 lastName3"
             };
 
         /// <summary>
